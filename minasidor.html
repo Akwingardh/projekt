@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mina sidor</title>
+    <link rel="stylesheet" href="css/mystyles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <article>
+                <section id="navigation-bar">
+                    <div id="home-nav">
+                        <a href="index.html"><img class="nav-icon" id="home-icon" src="bilder/hemikon.svg" alt="Hemikon"></a>
+                    </div>
+                    <div id="right-nav">
+                        <a href="boka.html"><img class="nav-icon nav-right-icon" id="book-icon" src="bilder/bokaikon.svg" alt="Boka"></a>
+                        <a href="kontakt.html"><img class="nav-icon nav-right-icon" id="contact-icon" src="bilder/kontaktikon.svg" alt="Kontakt"></a>
+                        <a href="loggain.html" class="loggain"><img class="nav-icon nav-right-icon" id="profile-icon" src="bilder/profilikonblue.svg" alt="Profil"></a>
+                        <a href="information.html"><img class="nav-icon nav-right-icon" id="info-icon" src="bilder/infoikon.svg" alt="Information"></a>
+
+                    </div>
+                </section>
+            </article>
+        </nav>
+    </header>
+
+    <main>
+
+        <article class="body-header">
+            <h1>Mina sidor</h1>
+        </article>
+
+        <article id="grid-container-mina-sidor">
+            <section class="mina-sidor-box" id="mina-uppgifter">
+                <h2>Mina uppgifter</h2>
+                <section class="mina-sidor-vit-box">
+                    <img src="bilder/editikon.svg" alt="Edit" class="edit-icon">
+                    <table id="mina-uppgifter-table">
+                        <tr>
+                            <td><b>Förnamn:</b></td>
+                            <td>Anna</td>
+                        </tr>
+                        <tr>
+                            <td><b>Efternamn:</b></td>
+                            <td>Larsson</td>
+                        </tr>
+                        <tr>
+                            <td><b>Telefonnummer:</b></td>
+                            <td>0767-89-45-55</td>
+                        </tr>
+                        <tr>
+                            <td><b>Mailadress:</b></td>
+                            <td>anna.larsson@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td><b>Adress:</b></td>
+                            <td>Älvsborgsgatan 11D,
+                                414 52 Göteborg</td>
+                        </tr>
+                    </table>
+                </section>
+            </section>
+            <section class="mina-sidor-box" id="mina-resemål">
+                <h2>Mina resemål</h2>
+                <section class="mina-sidor-vit-box" id="new-form">
+                    <div id="mina-titel">
+                        <p id="minaresemal-titel"> Lägg till nytt resemål:</p>
+                    </div>
+                    
+                    <form id="nytt-resemål" autocomplete="on">
+                        <label for="name">Namn:</label>
+                        <input type="text" id="name" name="name" placeholder="ICA Maxi">*<br>
+                        <label for="adress">Adress:</label>
+                        <input type="text" id="adress" name="adress" placeholder="Göteborgsgatan 123">*<br>
+                        <label for="postnummer">Postnummer:</label>
+                        <input type="text" id="postnummer" name="postnummer" placeholder="123 45">*<br>
+                        <label for="stad">Stad:</label>
+                        <input type="text" id="stad" name="stad" placeholder="Göteborg">*
+                        <p class="oblig-text" id="oblig-minaresmål">* Obligatoriska fält</p>
+                        <div id="submit-knapp">
+                            <input type="submit" id="submit" value="Lägg till">
+                        </div>
+                      </form>
+
+                </section>
+
+                <section class="mina-sidor-vit-box">
+                    <table class="resor-box-table">
+                        <tr>
+                            <td class="plats">Hemköp</td>
+                            <td></td>
+                            <td><img src="bilder/editikon.svg" alt="Edit" class="edit-icon-resor"></td>
+                        </tr>
+                        <tr>
+                            <td>Kustgatan 14<br>414 52 Göteborg</td>
+                            <td class="middle-row">Välj resa:</td>
+                            <td class="edge-row"><input class="checkbox" type="checkbox"></td>
+                        </tr>
+                    </table>                        
+                </section>
+                <section class="resor-box">
+                    <table class="resor-box-table">
+                        <tr>
+                            <td class="plats">Friskis & Svettis</td>
+                            <td></td>
+                            <td><img src="bilder/editikon.svg" alt="Edit" class="edit-icon-resor"></td>
+                        </tr>
+                        <tr>
+                            <td>Karl Johansgatan 152<br>414 51 Göteborg</td>
+                            <td class="middle-row">Välj resa:</td>
+                            <td class="edge-row"><input class="checkbox" type="checkbox"></td>
+                        </tr>
+                    </table>   
+                </section>
+                <section class="resor-box">
+                    <table class="resor-box-table">
+                        <tr>
+                            <td class="plats">Närhälsan Majorna</td>
+                            <td></td>
+                            <td><img src="bilder/editikon.svg" alt="Edit" class="edit-icon-resor"></td>
+                        </tr>
+                        <tr>
+                            <td>Skärgårdsgatan 4<br>414 58 Göteborg</td>
+                            <td class="middle-row">Välj resa:</td>
+                            <td class="edge-row"><input class="checkbox" type="checkbox"></td>
+                        </tr>
+                    </table>                        
+                </section>
+
+                <section class="boka-resa">
+                    <p id="boka-resa-mina-sidor">Boka resa</p>
+                </section>
+
+            </section>
+
+            <section class="mina-sidor-box" id="mina-bokade-resor">
+                <h2>Bokade resor</h2>
+                    <section class="resor-box">
+                        <table class="resor-box-table">
+                            <tr>
+                                <td class="plats">Hemköp</td>
+                                <td></td>
+                                <td><img src="bilder/editikon.svg" alt="Edit" class="edit-icon-resor"></td>
+                            </tr>
+                            <tr>
+                                <td>Tisdag kl 18.30</td>
+                                <td class="middle-row">Välj resa:</td>
+                                <td class="edge-row"><input class="checkbox" type="checkbox"></td>
+                            </tr>
+                        </table>                        
+                    </section>
+                    <section class="resor-box">
+                        <table class="resor-box-table">
+                            <tr>
+                                <td class="plats">Friskis & Svettis</td>
+                                <td></td>
+                                <td><img src="bilder/editikon.svg" alt="Edit" class="edit-icon-resor"></td>
+                            </tr>
+                            <tr>
+                                <td>Onsdag kl 11.00</td>
+                                <td class="middle-row">Välj resa:</td>
+                                <td class="edge-row"><input class="checkbox" type="checkbox"></td>
+                            </tr>
+                        </table>                        
+                    </section>
+                    <section class="resor-box">
+                        <table class="resor-box-table">
+                            <tr>
+                                <td class="plats">Närhälsan Majorna</td>
+                                <td></td>
+                                <td><img src="bilder/editikon.svg" alt="Edit" class="edit-icon-resor"></td>
+                            </tr>
+                            <tr>
+                                <td>Fredag kl. 13.30</td>
+                                <td class="middle-row">Välj resa:</td>
+                                <td class="edge-row"><input class="checkbox" type="checkbox"></td>
+                            </tr>
+                        </table>                        
+                    </section>
+                    <section class="av-omboka-button" id="minasidor-avomboka">
+                        <p>Avboka/Omboka</p>
+                    </section>
+            </section>
+        </article>
+    
+    </main>
+
+    <footer>
+
+        <article id="footer-bar">
+            
+            <section id="footer-section"></section>
+        </article>
+
+        <section id="illustration-minasidor">
+            <img id="minasidor-picture" src="bilder/bild2.png" alt="">
+        </section>
+
+    </footer>
+
+    <section id="popup-avomboka">
+        <section class="pop-up-background">
+        </section>
+        <section class="pop-up" id="av-omboka-popup">
+            <section id="close-box-bokad-resa">
+                <p class="pop-up-text close" id="close-light">&#10005</p>
+            </section>
+            <h4>BOKAD RESA</h4>
+            <section class="pop-up-text-box" id="popup-vit-box">
+                <section class="mina-sidor-vit-box" id="boka-form">
+                        
+                    <form id="ny-bokning" autocomplete="on">
+                        <label for="from">Från:</label>
+                        <select name="from" id="from">
+                            <option value="nh-majorna">Närhälsan Majorna</option>
+                            <option value="hemkop">Hemköp</option>
+                            <option value="fs-majorna">Friskis & Svettis</option>
+                            <option value="hemma">Mitt hem</option>
+                        </select>*<br>
+
+                        <label for="to">Till:</label>
+                        <select name="to" id="to">
+                            <option value="hemma">Mitt hem</option>
+                            <option value="nh-majorna">Närhälsan Majorna</option>
+                            <option value="hemkop">Hemköp</option>
+                            <option value="fs-majorna">Friskis & Svettis</option>
+                        </select>*<br>
+
+                        <label for="date">Datum:</label>
+                        <input type="text" name="date" id="date" placeholder="02/03/223">*<br>
+
+                        <label for="time">Tid:</label>
+                        <input type="text" id="time" name="time" placeholder="13:15">*
+                        <p class="oblig-text">* Obligatoriska fält</p>
+                        <section id="grid-container-knappar">
+                            <div class="avomboka">
+                                <input value="Omboka" id="grid-knapp-1">
+                            </div>
+                            <div>
+                                <input value="Avboka" id="grid-knapp-2">
+                            </div>
+                        </section>
+                    </form>
+
+                </section>
+            </section>
+        </section>
+    </section>
+
+    <section id="avboka-confirm-popup">
+        <section class="pop-up-background">
+        </section>
+        <section class="pop-up">
+            <section id="close-box-avboka" class="close-box-avomboka">
+                <p class="pop-up-text close">&#10005</p>
+            </section>
+            <section class="pop-up-text-box">
+                <p class="pop-up-text">Är du säker på att du vill avboka resan?</p>
+            </section>
+            <section class="avboka-knapp" id="avboka-knapp">
+                <p id="avboka-confirm">Avboka</p>
+            </section>
+        </section>
+    </section>
+
+    <section id="avbokat-popup">
+        <section class="pop-up-background"></section>
+        <section class="pop-up">
+            <section id="close-box-avbokat" class="close-box-avomboka">
+                <p class="pop-up-text close">&#10005</p>
+            </section>
+            <section class="pop-up-text-box">
+                <p class="pop-up-text">Din resa är nu avbokad!</p>
+            </section>
+        </section>
+    </section>
+
+    <section id="omboka-popup">
+        <section class="pop-up-background"></section>
+        <section class="pop-up">
+            <section id="close-box-omboka" class="close-box-avomboka">
+                <p class="pop-up-text close">&#10005</p>
+            </section>
+            <section class="pop-up-text-box">
+                <h4 class="popup-titel">Bekräfta bokning</h4>
+                <section id="omboka-vit-box">
+                    <p class="pop-up-text-blue"><b>Hemköp Majorna</b></p>
+                    <p class="pop-up-text-blue">02/03/23</p>
+                    <p class="pop-up-text-blue">kl 15:00</p>
+                </section>
+                <section>
+                    <p id="omboka-boka-knapp">Boka</p>
+                </section>
+            </section>
+        </section>
+    </section>
+
+    <section id="tack-bokning-popup">
+        <section class="pop-up-background"></section>
+        <section class="pop-up">
+            <section id="close-box-tack-bokning" class="close-box-avomboka">
+                <p class="pop-up-text close">&#10005</p>
+            </section>
+            <section class="pop-up-text-box">
+                <p class="pop-up-text">Tack för din bokning!</p>
+            </section>
+        </section>
+    </section>
+
+<script>
+
+let omavbokaKnappEl = document.getElementById("minasidor-avomboka");
+let avOmbokaPopUpEl = document.getElementById("popup-avomboka");
+let closeBokadResaEl = document.getElementById("close-box-bokad-resa");
+let closeAvbokaConfirmEl = document.getElementById("close-box-avboka");
+let avbokaKnappEl = document.getElementById("grid-knapp-2");
+let avbokaConfirmPopUpEl = document.getElementById("avboka-confirm-popup");
+let closeAvbokatPopUpEl = document.getElementById("close-box-avbokat");
+let avbokaConfirmKnappEl = document.getElementById("avboka-knapp");
+let avbokatPopUpEl = document.getElementById("avbokat-popup");
+let ombokaPopUpEl = document.getElementById("omboka-popup");
+let ombokaKnappEl = document.getElementById("grid-knapp-1");
+let closeOmbokaPopUpEl = document.getElementById("close-box-omboka");
+let tackBokningPopUpEl = document.getElementById("tack-bokning-popup");
+let ombokaBokaKnapp = document.getElementById("omboka-boka-knapp");
+let closeTackBokningPopUpEl = document.getElementById("close-box-tack-bokning");
+
+let bokaResaKnappMinaSidorEl = document.getElementById("boka-resa-mina-sidor");
+
+
+omavbokaKnappEl.addEventListener("click", showPopUpAvOmboka);
+closeBokadResaEl.addEventListener("click", hidePopUpAvOmboka);
+avbokaKnappEl.addEventListener("click", showAvbokaConfirmPopUp);
+closeAvbokaConfirmEl.addEventListener("click", hideAvbokaConfirmPopUp);
+closeAvbokatPopUpEl.addEventListener("click", hideAllAvOmbokaPopUps);
+avbokaConfirmKnappEl.addEventListener("click", showAvbokatPopUp);
+ombokaKnappEl.addEventListener("click", showOmbokaPopUp);
+closeOmbokaPopUpEl.addEventListener("click", hideOmbokaPopUp);
+ombokaBokaKnapp.addEventListener("click", showTackBokningPopUp);
+closeTackBokningPopUpEl.addEventListener("click", hideAllAvOmbokaPopUps);
+
+bokaResaKnappMinaSidorEl.addEventListener("click", showOmbokaPopUp);
+
+
+
+function showPopUpAvOmboka() {
+    avOmbokaPopUpEl.style.visibility = "visible";
+}
+
+function hidePopUpAvOmboka() {
+    avOmbokaPopUpEl.style.visibility = "hidden";
+}
+
+function showAvbokaConfirmPopUp() {
+    avbokaConfirmPopUpEl.style.visibility = "visible";
+}
+
+function hideAvbokaConfirmPopUp() {
+    avbokaConfirmPopUpEl.style.visibility = "hidden";
+}
+
+function hideAllAvOmbokaPopUps() {
+    avbokaConfirmPopUpEl.style.visibility = "hidden";
+    avOmbokaPopUpEl.style.visibility = "hidden";
+    avbokatPopUpEl.style.visibility = "hidden";
+    tackBokningPopUpEl.style.visibility = "hidden";
+    ombokaPopUpEl.style.visibility = "hidden";
+}
+
+function showAvbokatPopUp() {
+    avbokatPopUpEl.style.visibility = "visible";
+    avbokaConfirmPopUpEl.style.visibility = "hidden";
+}
+
+function showOmbokaPopUp() {
+    ombokaPopUpEl.style.visibility ="visible";
+}
+
+function hideOmbokaPopUp() {
+    ombokaPopUpEl.style.visibility ="hidden";
+}
+
+function showTackBokningPopUp() {
+    tackBokningPopUpEl.style.visibility = "visible";
+    ombokaPopUpEl.style.visibility = "hidden";
+}
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

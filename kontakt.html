@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakta oss</title>
+    <link rel="stylesheet" href="css/mystyles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <article>
+                <section id="navigation-bar">
+                    <div id="home-nav">
+                        <a href="index.html"><img class="nav-icon" id="home-icon" src="bilder/hemikon.svg" alt="Hem"></a>
+                    </div>
+                    <div id="right-nav">
+                        <a href="boka.html"><img class="nav-icon nav-right-icon" id="book-icon" src="bilder/bokaikon.svg" alt="Boka"></a>
+                        <a href="kontakt.html"><img class="nav-icon nav-right-icon" id="contact-icon" src="bilder/kontaktikonblue.svg" alt="Kontakt"></a>
+                        <a href="loggain.html" id="loggain"><img class="nav-icon nav-right-icon" id="profile-icon" src="bilder/profilikon.svg" alt="Profil"></a>
+                        <a href="information.html"><img class="nav-icon nav-right-icon" id="info-icon" src="bilder/infoikon.svg" alt="Information"></a>
+
+                    </div>
+                </section>
+            </article>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <article class="body-header">
+            <h1>Kontakta oss</h1>
+        </article>
+
+        <article id="grid-container-mina-sidor">
+            <section class="kontakt-box" id="kontakt-uppgifter">
+
+
+
+                <section class="kontakt-vit-box">
+                    <section id="kontakttext">
+                        <p><b>Du kan även kontakta oss på följande sätt:</b></p><br>
+                        <p><b>Email:</b> gbgfardtjanst@goteborgsstad.se</p>
+                        <p><b>Telefon:</b> 031 747 97 00</p><br>
+                        <p><b>Öppetider telefon:</b> 09:00-17:00 (mån-fre)</p>
+                    </section>
+
+                </section>
+
+
+            </section>
+            <section class="kontakt-box" id="kontakt-form">
+                <section class="kontakt-vit-box" id="new-form">
+                    <div id="kontakt-titel">
+                        <p><b>Fyll i formuläret nedanför för att kontakta oss:</b></p>
+                        
+                    </div>
+                    <form id="kontaktform" autocomplete="on">
+                        <label for="fname">Förnamn:</label>
+                        <input type="text" id="fname" name="fname" placeholder="Anna">*<br>
+                        <label for="lname">Efternamn:</label>
+                        <input type="text" id="lname" name="lname" placeholder="Larsson">*<br>
+                        <label for="nummer">Telefonnummer:</label>
+                        <input type="text" id="nummer" name="nummer" placeholder="0706 12 34 56">*<br>
+                        <label for="mail">Mailadress:</label>
+                        <input type="text" id="mail" name="mail" placeholder="anna.larsson@gmail.com">*<br><br><br>
+                        <label for="kontakt-text">* Skriv ett meddelande nedanför så återkommer vi så fort vi kan:</label>
+                        <textarea id="kontakt-text"></textarea>
+                        <p class="oblig-text">* Obligatoriska fält</p>
+                            <div id="kontakt-submit">
+                                <input type="submit" id="submit" value="Skicka">
+                            </div>
+                      </form>
+
+                </section>
+            </section>  
+        </article>
+    
+    </main>
+
+    <footer>
+
+        <article id="footer-bar">
+            
+            <section id="footer-section"></section>
+        </article>
+
+        <section id="illustration-kontakt">
+            <img id="kontakt-picture" src="bilder/bild7.png" alt="">
+        </section>
+
+    </footer>
+    
+    <script src="js/main.js"></script>
+
+</body>
+</html>

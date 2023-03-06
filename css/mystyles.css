@@ -1,0 +1,1016 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: "Quicksand", Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+
+/*Header*/
+
+#navigation-bar {
+    background-color: #A4ADFF;
+    height: 100px;
+    line-height: 140px;
+    padding-left: 60px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.nav-icon {
+    width: 50px;
+}
+
+#right-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding-right: 30px;
+}
+
+.nav-right-icon {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.nav-icon:hover {
+    opacity: 70%;
+}
+
+/*Footer*/
+
+#footer-bar {
+    background-color: #A4ADFF;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+#illustration-index {
+    position: fixed;
+    bottom: -200px;
+    right: 100px;
+}
+
+#index-picture {
+    width: 600px;
+}
+
+#illustration-login {
+    position: fixed;
+    bottom: -80px;
+    left: 20px;
+}
+
+#login-picture {
+    width: 600px;
+}
+
+#illustration-minasidor {
+    position: fixed;
+    bottom: 10px;
+    right: 60px;
+}
+
+#minasidor-picture {
+    width: 600px;
+}
+
+#illustration-kontakt {
+    position: fixed;
+    bottom: -160px;
+    left: 100px;
+}
+
+#kontakt-picture {
+    width: 500px;
+}
+
+#illustration-information {
+    position: fixed;
+    bottom: -50px;
+    left: -50px;
+}
+
+#information-picture {
+    width: 500px;
+}
+
+#illustration-boka {
+    position: fixed;
+    bottom: -50px;
+    right: 30px;
+}
+
+#boka-picture {
+    width: 400px;
+}
+
+/*Kropp sidan: Start/Index*/
+
+#book-button-home {
+    background-color: #4B53A1;
+    width: 170px;
+    padding: 50px;
+    font-family: "Lexend", Arial, Helvetica, sans-serif;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 1.2em;
+    line-height: 0.6em;
+    color: #E7F9FF;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(40, 66, 114, 0.575) 0px 2px 4px -1px;
+    z-index: 3;
+}
+
+#book-button-home:hover {
+    background-color: #E7F9FF;
+    color: #4B53A1;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 1.1em;
+}
+
+/*Kropp på sidan: Logga in*/
+
+.body-header {
+    background-color: #E7F9FF;
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #4B53A1;
+    letter-spacing: 0.5em;
+    position: relative;
+    z-index: 1;
+    font-size: 1.7em;
+    width: 100%;
+    margin-top: 100px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(124, 158, 221, 0.575) 0px 2px 4px -1px;
+
+}
+
+#log-in-box {
+    background-color: #E7F9FF;
+    width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    padding: 20px;
+    margin-top: 100px;
+    letter-spacing: 0.1em;
+    color: #4B53A1;
+    border-radius: 20px;
+    position: relative;
+    z-index: 3;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(124, 158, 221, 0.575) 0px 2px 4px -1px;
+
+}
+
+#log-in-input {
+    border: none;
+    padding: 10px;
+    margin-top: 20px;
+    color: #4B53A1;
+    width: 300px;
+}
+
+#log-in-button {
+    padding: 5px;
+    margin: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #4B53A1;
+    width: 100px;
+    color: #E7F9FF;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#log-in-button:hover {
+    background-color: #A4ADFF;
+    color: #4B53A1;
+}
+
+#bank-id-logo {
+    width: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/*Kropp på sidan: mina sidor*/
+
+#grid-container-mina-sidor {
+    /* background-color: #4B53A1; */
+    display: grid;
+    grid-template-columns: 500px 500px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 70px;
+    margin-bottom: 170px;
+    width: 1040px;
+    row-gap: 40px;
+    column-gap: 40px;
+}
+
+.mina-sidor-box {
+    background-color: #E7F9FF;
+    width: 500px;
+    height: 600px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #4B53A1;
+    border-radius: 20px;
+    z-index: 3;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(124, 158, 221, 0.575) 0px 2px 4px -1px;
+
+}
+
+#mina-uppgifter {
+    grid-row: 1 / 2;
+}
+
+#mina-bokade-resor {
+    grid-row: 2 / 3;
+    height: 625px;
+}
+
+#mina-resemål {
+    grid-row: 1 / 4;
+    height: 1200px;
+}
+
+h2 {
+    text-transform: uppercase;
+    padding: 20px;
+    font-size: 1.2em;
+    font-weight: normal;
+}
+
+h3 {
+    font-weight: normal;
+    font-size: 1em;
+    padding: 10px;
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+
+.mina-sidor-vit-box {
+    background-color: white;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(124, 158, 221, 0.575) 0px 2px 4px -1px;
+
+}
+
+#mina-uppgifter-table {
+    padding: 40px;
+    text-align: left;
+    border-collapse: separate;
+    border-spacing: 0 40px;
+    padding-top: 0;
+    font-size: 0.9em;
+}
+
+#mina-uppgifter-table td {
+    width: 200px;
+}
+
+#mina-uppgifter-table tr {
+    vertical-align: top;
+    padding: 10px;
+}
+
+.edit-icon {
+    width: 30px;
+    margin-right: 20px;
+    margin-top: 20px;
+    float: right;
+}
+
+.edit-icon:hover {
+    opacity: 70%;
+}
+
+.resor-box {
+    background-color: white;
+    border-radius: 30px;
+    margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(124, 158, 221, 0.575) 0px 2px 4px -1px;
+
+}
+
+.resor-box-table {
+    width: 450px;
+    text-align: left;
+    padding: 20px;
+    line-height: 40px;
+}
+
+.edge-row {
+    width: 30px;
+    text-align: right;
+}
+
+.middle-row {
+    text-align: right;
+}
+
+.edit-icon-resor {
+    width: 25px;
+    float: right;
+}
+
+.edit-icon-resor:hover {
+    opacity: 70%;
+}
+
+.plats {
+    font-weight: 800;
+}
+
+#minasidor-avomboka {
+    cursor: pointer;
+}
+
+.av-omboka-button {
+    background-color: #D45454;
+    width: 200px;
+    float: right;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    border-radius: 15px;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(124, 158, 221, 0.575) 0px 2px 4px -1px;
+cursor: pointer;
+}
+
+.av-omboka-button:hover {
+    background-color: #4B53A1;
+}
+
+#new-form {
+    margin-bottom: 20px;
+}
+
+#mina-resemål {
+    text-align: center;
+}
+
+#minaresemal-titel {
+    padding: 20px;
+    padding-top: 35px;
+    font-weight: 600;
+}
+
+#nytt-resemål {
+    padding: 20px;
+    padding-top: 0px;
+}
+
+#mina-titel {
+    text-align: left;
+}
+
+.submit-knapp {
+    text-align: right;
+}
+
+#name, #adress, #stad, #postnummer {
+    margin: 10px;
+    margin-left: 100px;
+    width: 200px;
+    background-color: #E7F9FF;
+    border: 0;
+    padding: 5px;
+}
+
+#postnummer {
+    margin-left: 39px;
+}
+
+#stad {
+    margin-left: 110px;
+}
+
+#adress {
+    margin-left: 90px;
+}
+
+#name {
+    margin-left: 98px;
+}
+
+.submit {
+    border: 0;
+    background-color: #4B53A1;
+    color: white;
+    padding: 15px;
+    margin: 20px;
+    position: relative;
+    border-radius: 15px;
+    font-size: 1em;
+    font-family: "Quicksand", Arial, Helvetica, sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(124, 158, 221, 0.575) 0px 2px 4px -1px;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: #A4ADFF;
+}
+
+.boka-resa {
+    background-color: #4B53A1;
+    width: 120px;
+    float: right;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    border-radius: 15px;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(124, 158, 221, 0.575) 0px 2px 4px -1px;
+    cursor: pointer;
+}
+
+.boka-resa:hover {
+    background-color: #A4ADFF;
+}
+
+/*Kropp på sidan: kontakt*/
+
+.kontakt-vit-box {
+    background-color: white;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 30px;
+    margin-top: 30px;
+    text-align: left;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(124, 158, 221, 0.575) 0px 2px 4px -1px;
+}
+
+#kontakttext {
+    padding: 20px;
+    text-align: left;
+}
+
+.kontakt-box {
+    background-color: #E7F9FF;
+    width: 500px;
+    height: 600px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #4B53A1;
+    border-radius: 20px;
+    z-index: 3;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(124, 158, 221, 0.575) 0px 2px 4px -1px;
+
+}
+
+#kontakt-titel {
+    padding: 20px;
+}
+
+#kontakt-uppgifter {
+    height: 340px;
+}
+
+#kontaktform {
+    text-align: left;
+    padding: 20px;
+    padding-top: 0;
+}
+
+#kontakt-form {
+    height: 880px;
+}
+
+#fname, #lname, #nummer, #mail, #kontakt-text, #from, #time, #rdate, #date, #to {
+    margin: 10px;
+    margin-left: 20px;
+    width: 200px;
+    background-color: #E7F9FF;
+    border: 0;
+    padding: 5px;
+}
+
+#nummer {
+    margin-left: 18px;
+}
+
+#fname {
+    margin-left: 75px;
+}
+
+#lname {
+    margin-left: 62px;
+}
+
+#mail {
+    margin-left: 60px;
+}
+
+#submit {
+    border: 0;
+    background-color: #4B53A1;
+    color: white;
+    padding: 15px;
+    margin: 20px;
+    position: relative;
+    border-radius: 15px;
+    font-size: 1em;
+    font-family: "Quicksand", Arial, Helvetica, sans-serif;
+}
+
+#submit:hover {
+    background-color: #A4ADFF;
+}
+
+#kontakt-text {
+    width: 360px;
+    height: 200px;
+    margin: 30px;
+    margin-left: 20px;
+}
+
+#kontakt-submit {
+    text-align: right;
+}
+
+.oblig-text {
+    font-size: 0.7em;
+    padding-top: 20px;
+}
+#oblig-minaresmål {
+    text-align: left;
+}
+
+/*Informationsida*/
+
+#information-box {
+    background-color: #E7F9FF;
+    width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 200px;
+    letter-spacing: 0.1em;
+    color: #4B53A1;
+    border-radius: 20px;
+    position: relative;
+    z-index: 3;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(124, 158, 221, 0.575) 0px 2px 4px -1px;
+}
+
+
+
+#information-vit-box {
+    background-color: white;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 30px;
+    text-align: left;
+    padding: 20px;
+    padding-top: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(124, 158, 221, 0.575) 0px 2px 4px -1px;
+}
+
+#information-text {
+    padding: 30px;
+    line-height: 30px;
+}
+
+#boka-resa-information {
+    background-color: #4B53A1;
+    text-align: center;
+    width: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    padding: 5px;
+    border-radius: 15px;
+    line-height: 25px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(124, 158, 221, 0.575) 0px 2px 4px -1px;
+}
+
+#boka-resa-information:hover {
+    background-color: #A4ADFF;
+
+}
+
+#info-nav {
+    background-color: #E7F9FF;
+    border-radius: 30px;
+    padding: 20px;
+    padding-left: 60px;
+    margin-bottom: 60px;
+}
+
+#info-nav-list {
+    list-style: none;
+    padding: 0;
+}
+
+#info-nav-list a {
+    color: #4B53A1;
+    line-height: 3em;
+}
+
+#info-nav-list a:hover {
+    color: #A4ADFF;
+}
+
+h4 {
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+h5 {
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+h6 {
+    font-size: 1em;
+    font-weight: 600;
+}
+
+#boka-link {
+    text-decoration: none;
+}
+
+/*Boka sida*/
+
+.boka-box {
+    background-color: #E7F9FF;
+    width: 500px;
+    text-align: center;
+    padding-bottom: 40px;
+    letter-spacing: 0.1em;
+    color: #4B53A1;
+    border-radius: 20px;
+    z-index: 3;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(124, 158, 221, 0.575) 0px 2px 4px -1px;
+}
+
+.boka-vit-box {
+    background-color: white;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(124, 158, 221, 0.575) 0px 2px 4px -1px;
+}
+
+.boka-titel {
+    text-transform: uppercase;
+    padding: 20px;
+    font-size: 1.2em;
+}
+
+#boka-resa-knapp {
+    background-color: #4B53A1;
+    width: 100px;
+    color: #E7F9FF;
+    padding: 15px;
+    border-radius: 10px;
+    margin-left: 65%;
+    margin-top: 30px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(124, 158, 221, 0.575) 0px 2px 4px -1px;
+}
+
+#boka-resa-knapp:hover {
+    background-color: #A4ADFF;
+    color: #4B53A1;
+    cursor: pointer;
+}
+
+#from {
+    margin-left: 70px;
+}
+
+#to {
+    margin-left: 82px;
+}
+
+#date, #rdate {
+    width: 100px;
+    margin-left: 50px;
+}
+
+#rdate-div {
+    display: none;
+}
+
+#retur {
+    margin-left: 60px;
+}
+
+#time {
+    width: 50px;
+    margin-left: 80px;
+}
+
+#boka-form {
+    padding-top: 20px;
+    text-align: left;
+    
+}
+
+#ny-bokning {
+    padding: 30px;
+}
+
+.bokade-titel {
+    text-transform: uppercase;
+    font-size: 1.2em;
+    padding: 20px;
+}
+
+#bokade-resor {
+    height: 600px;
+}
+
+/*Pop-ups*/
+
+.pop-up-background {
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 5;
+    opacity: 70%;
+}
+
+.pop-up {
+    background-color: #4B53A1;
+    padding: 20px;
+    width: 400px;
+    border-radius: 30px;
+    padding-top: 2px;
+    position: fixed;
+    z-index: 6;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(40, 66, 114, 0.575) 0px 2px 4px -1px;
+}
+
+.pop-up-text-box {
+    text-align: center;
+}
+
+#close-box {
+    text-align: right;
+}
+
+.pop-up-text {
+    color: #E7F9FF;
+    font-weight: 600;
+    font-size: 1.2em;
+    letter-spacing: 0.05em;
+    line-height: 1.5em;
+}
+
+.close {
+    margin-right: 15px;
+    font-size: 1.5em;
+}
+
+.close:hover {
+    color: #A4ADFF;
+    cursor: pointer;
+}
+
+#bankid-login {
+    width: 70px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(20, 34, 59, 0.575) 0px 2px 4px -1px;
+}
+
+#login-knapp {
+    background-color: #E7F9FF;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 1.3em;
+    color: #4B53A1;
+    margin-top: 60px;
+}
+
+#login-knapp-link {
+    text-decoration: none;
+}
+
+#login-knapp:hover {
+    background-color: #A4ADFF;
+    cursor: pointer;
+}
+
+#popup-login {
+    visibility: hidden;
+}
+
+#av-omboka-popup {
+    background-color: #E7F9FF;
+    width: 450px;
+    text-align: center;
+    margin-top: 45px;
+}
+
+#close-box-bokad-resa {
+    text-align: right;
+}
+
+#close-box-login {
+    text-align: right;
+}
+
+#close-light {
+    color: #4B53A1;
+}
+
+#close-light:hover {
+    color: #A4ADFF;
+}
+
+#av-omboka-popup h4 {
+    margin-top: -20px;
+    color: #4B53A1;
+}
+
+#popup-vit-box {
+    background-color: #E7F9FF;
+    padding-bottom: 40px;
+}
+
+#grid-container-knappar {
+    display: grid;
+    grid-template-columns: 210px 33% 33%;
+    margin-top: 40px;
+}
+
+#grid-knapp-1 {
+    text-align: center;
+    grid-column: 3/4;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 20px;
+    letter-spacing: 0.15em;
+    width: 80px;
+    background-color: #4B53A1;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-family: "Quicksand", Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+#grid-knapp-1:hover {
+    cursor: pointer;
+    background-color: #A4ADFF;
+}
+
+#grid-knapp-2 {
+    grid-column: 2/3;
+    padding: 10px;
+    margin: 20px;
+    background-color: #D45454;
+    letter-spacing: 0.15em;
+    cursor: pointer;
+    text-align: center;
+    width: 80px;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-family: "Quicksand", Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+#grid-knapp-2:hover {
+    background-color: #A4ADFF;
+    cursor: pointer;
+}
+
+#popup-avomboka {
+    visibility: hidden;
+    position: fixed;
+    z-index: 5;
+}
+
+.close-box-avomboka {
+    text-align: right;
+}
+
+.avboka-knapp {
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 20px;
+    background-color: #D45454;
+    letter-spacing: 0.15em;
+    color: #fff;
+    width: 100px;
+    cursor: pointer;
+    border-radius: 30px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    font-weight: 700;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(40, 66, 114, 0.575) 0px 2px 4px -1px;
+}
+
+.avboka-knapp:hover {
+    background-color: #A4ADFF;
+}
+
+#avboka-confirm-popup {
+    position: fixed;
+    visibility: hidden;
+    z-index: 6;
+}
+
+#avbokat-popup {
+    position: fixed;
+    z-index: 7;
+    visibility: hidden;
+}
+
+.popup-titel {
+    color: #E7F9FF;
+    margin-top: -20px;
+}
+
+#omboka-popup {
+    position: fixed;
+    z-index: 6;
+    visibility: hidden;
+}
+
+#omboka-vit-box {
+    background-color: #E7F9FF;
+    color: #4B53A1;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(40, 66, 114, 0.575) 0px 2px 4px -1px;
+}
+
+.pop-up-text-blue {
+    color: #4B53A1;
+    line-height: 0.9em;
+    font-size: 1.3em;
+}
+
+#omboka-boka-knapp {
+    background-color: #E7F9FF;
+    width: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 20px;
+    padding: 30px;
+    text-transform: uppercase;
+    font-size: 2em;
+    color: #4B53A1;
+    font-weight: 500;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(40, 66, 114, 0.575) 0px 2px 4px -1px;
+
+}
+
+#omboka-boka-knapp:hover {
+    background-color: #A4ADFF;
+    color: #E7F9FF;
+    cursor: pointer;
+}
+
+#tack-bokning-popup {
+    position: fixed;
+    z-index: 7;
+    visibility: hidden;
+}
