@@ -7,6 +7,10 @@ body, html {
 
 /*Header*/
 
+a {
+    text-decoration: none;
+}
+
 #navigation-bar {
     background-color: #A4ADFF;
     height: 100px;
@@ -142,7 +146,8 @@ h1 {
 
 .body-header {
     background-color: #E7F9FF;
-    padding: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     text-align: center;
     text-transform: uppercase;
     color: #4B53A1;
@@ -207,7 +212,6 @@ h1 {
 /*Kropp på sidan: mina sidor*/
 
 #grid-container-mina-sidor {
-    /* background-color: #4B53A1; */
     display: grid;
     grid-template-columns: 500px 500px;
     margin-right: auto;
@@ -384,6 +388,10 @@ cursor: pointer;
     text-align: right;
 }
 
+#submit-knapp {
+    text-align: right;
+}
+
 #name, #adress, #stad, #postnummer {
     margin: 10px;
     margin-left: 100px;
@@ -437,7 +445,7 @@ cursor: pointer;
     color: white;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(124, 158, 221, 0.575) 0px 2px 4px -1px;
     cursor: pointer;
-}
+} */
 
 .boka-resa:hover {
     background-color: #A4ADFF;
@@ -1013,4 +1021,252 @@ h6 {
     position: fixed;
     z-index: 7;
     visibility: hidden;
+}
+
+#burger-menu {
+    display: none;
+    background-color: #A4ADFF;
+    width: 120px;
+    height: 100%;
+    margin: 0;
+    margin-top: -60px;
+}
+
+#burger-list {
+    margin-top: 10px;
+    background-color: #4B53A1;
+    padding-top: 100px;
+    margin-left: -60px;
+    height: 100vh;
+}
+
+#burger-list a {
+    padding-left: 40px;
+}
+
+#burger-icon div {
+    width: 35px;
+    height: 5px;
+    background-color: #4B53A1;
+    margin: 6px 0;
+    border-radius: 60px;
+}
+
+#burger-icon:hover {
+    opacity: 70%;
+    cursor: pointer;
+}
+
+#burger-icon {
+    padding: 20px;
+    visibility: hidden;
+}
+
+#menu-close {
+    float: right;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    color: #A4ADFF;
+    font-weight: 900;
+    font-size: 1.5em;
+}
+
+#menu-close:hover {
+    color: #E7F9FF;
+    cursor: pointer;
+}
+
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 1066px) {
+
+    #information-box {
+        width: 100%;
+        padding: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-radius: 0;
+    }
+
+    #grid-container-mina-sidor {
+        grid-template-columns: 100%;
+        width: 80vw;
+    }
+
+    #mina-uppgifter {
+        width: 100%;
+    }
+
+    #mina-resemål {
+        grid-row: 3/4;
+        width: 100%;
+        height: 1040px;
+    }
+
+    #mina-bokade-resor {
+        width: 100%;
+    }
+
+    .boka-box {
+        width: 80vw;
+        width: 100%;
+    }
+
+    #bokade-resor {
+        padding-right: auto;
+        padding-left: auto;
+    }
+
+    .resor-box-table {
+        width: 90%;
+        text-align: left;
+        line-height: 20px;
+        padding-left: auto;
+        padding-right: auto;
+    }
+
+    #kontakt-uppgifter, #kontakt-form {
+        width: 100%;
+        font-size: 0.8em;
+    }
+
+    #kontakt-form input {
+        width: 150px;
+    }
+
+    #kontakt-form textarea {
+        width: 80%;
+    }
+
+    
+    
+}
+
+@media (max-width: 785px) {
+    #information-box {
+        width: 100%;
+    }
+}
+
+@media (max-width: 615px) {
+    #right-nav, #home-nav {
+        display: none;
+    }
+
+    #burger-icon {
+        padding: 20px;
+        visibility: visible;
+        margin-left: -40px;
+        margin-top: 10px;
+    }
+
+    #grid-container-mina-sidor, .boka-box {
+        width: 100%;
+    }
+    
+
+
+    .resor-box-table {
+        font-size: 0.9em;
+    }
+
+    #nytt-resemål {
+        width: 70%;
+        font-size: 0.7em;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    #nytt-resemål input {
+        width: 100px;
+    }
+
+    #boka-form {
+        font-size: 0.7;
+    }
+
+    #mina-uppgifter {
+        width: 100%;
+        font-size: 0.8em;
+    }
+    
+}
+
+@media (max-width: 460px) {
+
+
+    #nytt-resemål {
+        width: 70%;
+        font-size: 0.7em;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-left: 20px;
+        text-align: left;
+    }
+
+    #ny-bokning select {
+        width: 100px;
+    }
+
+    #boka-resa-knapp {
+        font-size: 0.8em;
+        width: 70px;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .pop-up, #av-omboka-popup {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    #omboka-vit-box {
+        width: 50%;
+    }
+
+    .avomboka {
+        text-align: left;
+    }
+
+    #grid-knapp-2, #grid-knapp-1 {
+        font-size: 0.7em;
+        margin: 0;
+    }
+
+    #grid-knapp-2 {
+        width: 50px;
+        margin-left: -60px;
+    }
+
+    #grid-knapp-1 {
+        width: 60px;
+    }
+
+    #log-in-box {
+        width: 70%;
+    }
+
+    #log-in-input {
+        width: 50%;
+    }
+
+    .pop-up-text {
+        padding: 20px;
+    }
+
+    #login-knapp {
+        width: 100vw;
+        border-radius: 0;
+        margin-bottom: 30px;
+    }
+
+    #mina-uppgifter {
+        font-size: 0.7em;
+    }
+
 }

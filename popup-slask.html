@@ -49,7 +49,7 @@
         </section>
     </section> -->
 
-<section id="avbokat-popup">
+<!-- <section id="avbokat-popup">
     <section class="pop-up-background"></section>
     <section class="pop-up">
         <section id="close-box-avbokat" class="close-box-avomboka">
@@ -91,9 +91,39 @@
             <p class="pop-up-text">Tack för din bokning!</p>
         </section>
     </section>
+</section> -->
+
+
+
+
+<section id="burger-menu">
+    <p id="menu-close">&#10005</p>
+    <ul id="burger-list">
+        <a href="index.html"><img class="nav-icon burger-icon" id="home-icon" src="bilder/hemikon.svg" alt="Hemikon"></a><br>
+        <a href="boka.html"><img class="nav-icon burger-icon" id="book-icon" src="bilder/bokaikon.svg" alt="Boka"></a><br>
+        <a href="kontakt.html"><img class="nav-icon burger-icon" id="contact-icon" src="bilder/kontaktikon.svg" alt="Kontakt"></a><br>
+        <a href="loggain.html" id="loggain"><img class="nav-icon burger-icon" id="profile-icon" src="bilder/profilikon.svg" alt="Profil"></a><br>
+        <a href="information.html"><img class="nav-icon burger-icon" id="info-icon" src="bilder/infoikon.svg" alt="Information"></a><br>
+    </ul>
 </section>
 
-    
+<div id="burger-icon">
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+
+<script>
+    let burgerIconEl = document.getElementById("burger-icon");
+    let burgerMenuEl = document.getElementById("burger-menu");
+
+    burgerIconEl.addEventListener("click", showMenu);
+
+    function showMenu() {
+        burgerMenuEl.style.display = "block";
+        burgerIconEl.style.display = "none";
+    }
+</script>
     
 </body>
 </html>

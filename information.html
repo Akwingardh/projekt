@@ -25,6 +25,44 @@
                         <a href="loggain.html" id="loggain"><img class="nav-icon nav-right-icon" id="profile-icon" src="bilder/profilikon.svg" alt="Profil"></a>
                         <a href="information.html"><img class="nav-icon nav-right-icon" id="info-icon" src="bilder/infoikonblue.svg" alt="Information"></a>
                     </div>
+
+                    <section id="burger-menu">
+                        <p id="menu-close">&#10005</p>
+                        <div id="burger-list">
+                            <a href="index.html"><img class="nav-icon burger-icon" id="home-icon" src="bilder/hemikon.svg" alt="Hemikon"></a><br>
+                            <a href="boka.html"><img class="nav-icon burger-icon" id="book-icon" src="bilder/bokaikon.svg" alt="Boka"></a><br>
+                            <a href="kontakt.html"><img class="nav-icon burger-icon" id="contact-icon" src="bilder/kontaktikon.svg" alt="Kontakt"></a><br>
+                            <a href="loggain.html" id="loggain"><img class="nav-icon burger-icon" id="profile-icon" src="bilder/profilikon.svg" alt="Profil"></a><br>
+                            <a href="information.html"><img class="nav-icon burger-icon" id="info-icon" src="bilder/infoikon.svg" alt="Information"></a><br>
+                        </div>
+                    </section>
+                    
+                    <div id="burger-icon">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                    <script>
+                        let burgerIconEl = document.getElementById("burger-icon");
+                        let burgerMenuEl = document.getElementById("burger-menu");
+                        let closeMenuEl = document.getElementById("menu-close");
+                    
+                        burgerIconEl.addEventListener("click", showMenu);
+                        closeMenuEl.addEventListener("click", hideMenu)
+                    
+                        function showMenu() {
+                            burgerMenuEl.style.display = "block";
+                            burgerIconEl.style.display = "none";
+                        }
+
+                        function hideMenu() {
+                            burgerMenuEl.style.display = "none";
+                            burgerIconEl.style.display = "block";
+                        }
+                    </script>
+                    
+                </section>
                 </section>
             </article>
         </nav>
